@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
     
     var flipCount = 0 {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func touchCard(_ sender: UIButton) {
-//        print("agh! A ghost!")
+        //        print("agh! A ghost!")
         flipCount += 1
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
@@ -56,14 +56,14 @@ class ViewController: UIViewController {
     
     func emoji(for card: Card) -> String {
         if emoji[card.identifier] == nil, emojiChoices.count > 0 {
-                let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
-                emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+            emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
         }
-            
+        
         return emoji[card.identifier] ?? "?"
     }
     
     
-
+    
 }
 
