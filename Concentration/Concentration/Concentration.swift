@@ -20,6 +20,9 @@ class Concentration {
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
+                    print("indexOfOneAndOnlyFaceUpCard: \(indexOfOneAndOnlyFaceUpCard)")
+                    print("matchIndex.identifier: \(cards[matchIndex].identifier)")
+                    print("index.identifier: \(cards[index].identifier)")
                 }
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = nil
