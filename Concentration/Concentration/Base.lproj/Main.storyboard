@@ -147,7 +147,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pTD-0l-ouE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MbX-xa-4P9"/>
                             <constraint firstItem="ytE-tG-Jfr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ci6-cw-7zj"/>
